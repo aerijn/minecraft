@@ -7,6 +7,9 @@
 }
 
 /* Base */
+* {
+    box-sizing: border-box;
+}
 body {
     color: var(--color-primery-dakr);
     font-family: 'Poppins', sans-serif;
@@ -15,6 +18,9 @@ body {
     line-height: 1.5;
 }
 
+h1, h2, h3, h4, h5, h6, p {
+    margin-top: 0;
+}
 .address-link {
     font-style: normal;
 }
@@ -27,8 +33,29 @@ ul {
     list-style: none;
 }
 
+.visually-hidden {
+    position:absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.section {
+    padding: 48px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1288px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
 /* Button section */
 .button {
+    padding: 16px 32px;
     color: var(--color-primery-light);
     font-weight: 600;
     background: var(--color-brand);
@@ -61,11 +88,12 @@ ul {
 
 /* main section */
 .main-section {
-    background: url("./img/fon.png");
+    padding: 272px 0;
 }
 
 /* Hero section */
 .hero-title {
+    margin-bottom: 0;
     color: var(--color-primery-light);
     text-align: center;
     font-size: 128px;
@@ -82,9 +110,14 @@ ul {
 .section-title .accent2 {
     color: var(--color-brand-dakr);
 }
-.cookers-title {
+.cooker-title {
+    margin-bottom: 16px;
     font-size: 40px;
     font-weight: 600;
+}
+
+.cookers-title {
+   margin-bottom: 80px;
 }
 
 /* Advantages section */
@@ -114,6 +147,15 @@ ul {
 }
 
 /* Tradition section */
+
+.traditions-title {
+    margin-bottom: 42px;
+}
+
+.traditions-section {
+padding-top: 96px;
+}
+
 .traditions-text .brand {
     color: var(--color-brand);
     font-weight: 600;
@@ -125,6 +167,9 @@ ul {
 }
 
 /* formats-sektion */
+.formats-title {
+    margin-bottom: 80px;
+}
 .format-title {
     font-size: 24px;
     font-weight: 600;
@@ -135,6 +180,11 @@ ul {
     font-weight: 600;
 }
 
+/* system-pekaren-section */
+
+.system-pekaren-section-title {
+    margin-bottom: 16px;
+}
 /* footer */
 
 .address-link {
